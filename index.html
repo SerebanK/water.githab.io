@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+    <meta charset="UTF-8">
+    <title>water</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="modal modal-1" id="popap-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-dismiss="modal">
+                    <img src="images/close.png" alt="">
+                </button>
+                <div class="modal-header">
+                    <h4>Заказать звонок</h4>
+                    <p>Закажите звонок и мы свяжемся с Вами через несколько минут</p>
+                </div>
+                <div class="modal-body">
+                    <form method="post" name="popup" onsubmit="return false" id="callphone-popap-1">
+                        <div class="modal-form name">
+                            <label class="validate">
+                                <input class="form-control" type="text" name="name" placeholder="Ваше Имя">
+                            </label>
+                        </div>
+                        <div class="modal-form phone">
+                            <label class="validate">
+                                <input class="form-control" type="tel" name="phone" placeholder="Ваш Телефон"/>
+                            </label>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" class="call-order" value="заказать звонок" data-rel='callphone'>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-1" id="popap-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-dismiss="modal">
+                    <img src="images/close.png" alt="">
+                </button>
+                <div class="modal-header">
+                    <h4>Оставить Заявку</h4>
+                    <p>Оставьте Вашу заявку и мы свяжемся с Вами в скором времени</p>
+                </div>
+                <div class="modal-body">
+                    <form method="post" name="popup" onsubmit="return false" id="callphone-popap-2">
+                        <div class="modal-form name">
+                            <label class="validate">
+                                <input class="form-control" type="text" name="name" placeholder="Ваше Имя">
+                            </label>
+                        </div>
+                        <div class="modal-form phone">
+                            <label class="validate">
+                                <input class="form-control" type="tel" name="phone" placeholder="Ваш Телефон"/>
+                            </label>
+                        </div>
+                        <div class="modal-form mail">
+                            <label class="validate">
+                                <input class="form-control" type="email" name="Ваш E-mail"
+                                       placeholder="E-mail"/>
+                            </label>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" class="call-order" value="заказать звонок" data-rel='callphone'>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-1" id="popap-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-dismiss="modal">
+                    <img src="images/close.png" alt="">
+                </button>
+                <div class="modal-header">
+                    <h4>Оставьте Ваш Отзыв</h4>
+                </div>
+                <div class="modal-body">
+                    <form method="post" name="popup" onsubmit="return false" id="callphone-popap-3">
+                        <div class="modal-form name">
+                            <label class="validate">
+                                <input class="form-control" type="text" name="name" placeholder="Ваше Имя">
+                            </label>
+                        </div>
+                        <div class="modal-form mail">
+                            <label class="validate">
+                                <input class="form-control" type="email" name="Ваш E-mail"
+                                       placeholder="E-mail"/>
+                            </label>
+                        </div>
+                        <div class="modal-form">
+                            <textarea name="coments" placeholder="Комментарий"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" class="call-order" value="заказать звонок" data-rel='callphone'>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="logo-top">
+                        <a href="#">
+                            <img src="images/logo.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-6">
+                    <div class="top-right">
+                        <div class="phone-top">
+                            <p><a href="tel:0675101357">(067) 510 13 57</a></p>
+                            <p><a href="tel:0979044241">(097) 904 42 41</a></p>
+                        </div>
+                        <div class="btn-top">
+                            <a href="#" data-toggle="modal" data-target="#popap-1">заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-slider">
+        <div class="container">
+            <div class="row">
+                <div class="slider-border">
+                    <div class="slider-h">
+                        <h2>Продажа кулеров и помп</h2>
+                        <div class="slider-top">
+                            <div class="col-xs-12 col-sm-12 col-md-8 slider-top-left-block">
+                                <div class="slider-top-title">
+                                    <h3>Продажа кулеров и помп для воды</h3>
+                                </div>
+                                <div class="slider-top-icon">
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-1.png" class="img-responsive" alt="">
+                                        <p>Быстро</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-2.png" class="img-responsive" alt="">
+                                        <p>Качественно</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-3.png" class="img-responsive" alt="">
+                                        <p>Доступно</p>
+                                    </div>
+                                </div>
+                                <div class="slider-top-text">
+                                    <p>Порой устанавливать кулер в маленьком офисе или небольшой квартире
+                                        нецелесообразно. Но
+                                        пить не качественную воду вредно для здоровья. В таких случаях идеальным
+                                        вариантом будет
+                                        помпа для воды, которая, к тому же, имеет цену ниже, чем кулер.</p>
+                                </div>
+                                <div class="slider-top-btn">
+                                    <a href="#">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="hidden-xs hidden-sm col-md-4 slider-top-right-block">
+                                <img src="images/slider-pic-3.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-h">
+                        <h2>аренда кулеров</h2>
+                        <div class="slider-top">
+                            <div class="col-xs-12 col-sm-12  col-md-8 slider-top-left-block">
+                                <div class="slider-top-title">
+                                    <h3>Уважаемые клиенты! Компания «Питна вода» предоставляет для Васуслугу - кулер в
+                                        аренду на короткий или длительный срок</h3>
+                                </div>
+                                <div class="slider-top-icon">
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-1.png" class="img-responsive" alt="">
+                                        <p>Быстро</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-2.png" class="img-responsive" alt="">
+                                        <p>Качественно</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-3.png" class="img-responsive" alt="">
+                                        <p>Доступно</p>
+                                    </div>
+                                </div>
+                                <div class="slider-top-text">
+                                    <p>Каждые 6 месяцев специалисты компании проводят бесплатную чистку и дезинфекцию
+                                        оборудования.</p>
+                                </div>
+                                <div class="slider-top-btn">
+                                    <a href="#">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="hidden-xs hidden-sm col-md-4 slider-top-right-block">
+                                <img src="images/slider-pic-2.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-h">
+                        <h2>Доставка воды</h2>
+                        <div class="slider-top">
+                            <div class="col-xs-12 col-sm-12 col-md-8 slider-top-left-block">
+                                <div class="slider-top-title">
+                                    <h3>Доставка воды в любую точку Украины</h3>
+                                </div>
+                                <div class="slider-top-icon">
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-1.png" class="img-responsive" alt="">
+                                        <p>Быстро</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-2.png" class="img-responsive" alt="">
+                                        <p>Качественно</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-3.png" class="img-responsive" alt="">
+                                        <p>Доступно</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-4.png" class="img-responsive" alt="">
+                                        <p>Качественно</p>
+                                    </div>
+                                    <div class="icon-block">
+                                        <img src="images/slider-icon-5.png" class="img-responsive" alt="">
+                                        <p>Доступно</p>
+                                    </div>
+                                </div>
+                                <div class="slider-top-text">
+                                    <p>Доставка питьевой воды в офис одна из самых востребованных услуг на сегодняшний
+                                        день...</p>
+                                    <p>Все для того, чтобы вы были довольны. Мы доставляем не только воду, но и хорошее
+                                        настроение.</p>
+                                </div>
+                                <div class="slider-top-btn">
+                                    <a href="#">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="hidden-xs hidden-sm col-md-4 slider-top-right-block">
+                                <img src="images/slider-pic-1.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Преимущества употребления воды</h2>
+                </div>
+                <div class="slider-down">
+                    <div class="col-sm-4 advantages-icon">
+                        <div class="advantages-icon-pic-1"></div>
+                        <p>Употребление чистой воды улучшает самочувствие</p>
+                    </div>
+                    <div class="col-sm-4 advantages-icon">
+                        <div class="advantages-icon-pic-2"></div>
+                        <p>Человеку необходимо выпивать 10 стаканов воды в день</p>
+                    </div>
+                    <div class="col-sm-4 advantages-icon">
+                        <div class="advantages-icon-pic-3"></div>
+                        <p>Помогает поддерживать хорошую форму</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="content">
+        <div class="delivery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>ДОСТАВКА ВОДЫ</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+                        <div class="del-block-left">
+                            <div class="del-box-1">
+                                <p>Цена за 1 бутыль </p>
+                            </div>
+                            <div class="del-box-2">
+                                <div class="del-line-1">
+                                    <p class="bo">60</p>
+                                    <p class="th">гривен</p>
+                                </div>
+                                <div class="del-line-2">
+                                    <span>*при доставке 2 бутлей цена 52 гривны</span>
+                                </div>
+                            </div>
+                            <div class="del-btn">
+                                <p class="th">Каждый 10 бутыль</p>
+                                <p class="bo">в подарок!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs col-sm-6 col-md-5 col-lg-4">
+                        <div class="del-block-right">
+                            <div class="absolute-form">
+                                <h4>Заказать звонок</h4>
+                                <p>Закажите звонок и мы свяжемся с Вами через несколько минут</p>
+                                <form method="post" name="popup" onsubmit="return false" id="callphone-1">
+                                    <div class="modal-form name">
+                                        <label class="validate">
+                                            <input class="form-control" type="text" name="name" placeholder="Ваше Имя">
+                                        </label>
+                                    </div>
+                                    <div class="modal-form phone">
+                                        <label class="validate">
+                                            <input class="form-control" type="tel" name="phone" placeholder="Ваш Телефон"/>
+                                        </label>
+                                    </div>
+                                    <div class="form-btn">
+                                        <input type="submit" class="call-order" value="заказать звонок" data-rel='callphone'>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kids">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>польза воды для детей</h2>
+                    </div>
+                </div>
+                <div class="kids-box">
+                    <div class="kids-slid">
+                        <div class="col-xs-12 col-md-4 col-lg-3">
+                            <div class="kids-block-1"></div>
+                            <p>Вода - это кладовая микроэлементов и минеральных солей.</p>
+                            <p class="p-hover">В числе особенно важных из них:</p>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-3">
+                            <div class="kids-block-2"></div>
+                            <p>Детям часто предлагают лечение водой, если у них снижен</p>
+                            <p class="p-hover">Иммунитет</p>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-3">
+                            <div class="kids-block-3"></div>
+                            <p>Можно водой обеспечить детей всеми необходимыми веществами для укрепления</p>
+                            <p class="p-hover">Растущих костей, зубов и сердца</p>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-0 col-lg-offset-3 ">
+                        <div class="kids-bg-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>аренда и прожада кулеров</h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="catalog-slider">
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-1.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-2.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-3.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-4.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-1.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-2.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-3.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                            <div class="catalog-sl">
+                                <div class="catalog-sl-image">
+                                    <img src="images/cat-sl-4.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="catalog-sl-txt">
+                                    <p>Кулер для воды Ecotronic H2-TN</p>
+                                    <span>10 560 грн.</span>
+                                </div>
+                                <div class="catalog-sl-btn">
+                                    <a href="#" data-toggle="modal" data-target="#popap-2">купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="section-footer">
+        <div class="tenancy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>аренда кулеров</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+                        <div class="ten-block-left">
+                            <div class="ten-box-1">
+                                <p>Аренда кулера за 1 месяц</p>
+                            </div>
+                            <div class="ten-box-2">
+                                    <p class="bo">120</p>
+                                    <p class="th">гривен</p>
+                            </div>
+                            <div class="ten-box-3">
+                                <p>Преимущества долгосрочной аренды, Вы не несете дополнительных расходов (доставка кулера, постоянная очистка и дезинфекция кулера,ремонт).</p>
+                            </div>
+                            <div class="ten-btn">
+                                <a href="#" class="btn-1">купить кулер</a>
+                                <a href="#" class="btn-2">аренда кулера</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs col-sm-6 col-md-5 col-lg-4">
+                        <div class="ten-block-right">
+                            <div class="absolute-form">
+                                <h4>Заказать звонок</h4>
+                                <p>Закажите звонок и мы свяжемся с Вами через несколько минут</p>
+                                <form method="post" name="popup" onsubmit="return false" id="callphone-2">
+                                    <div class="modal-form name">
+                                        <label class="validate">
+                                            <input class="form-control" type="text" name="name" placeholder="Ваше Имя">
+                                        </label>
+                                    </div>
+                                    <div class="modal-form phone">
+                                        <label class="validate">
+                                            <input class="form-control" type="tel" name="phone" placeholder="Ваш Телефон"/>
+                                        </label>
+                                    </div>
+                                    <div class="form-btn">
+                                        <input type="submit" class="call-order" value="заказать звонок" data-rel='callphone'>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>отзывы</h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="reviews-slider">
+                            <div class="reviews-sl">
+                                <div class="reviews-icon-block">
+                                    <div class="like">
+                                        <span>350</span>
+                                    </div>
+                                    <div class="dislike">
+                                        <span>15</span>
+                                    </div>
+                                    <div class="reviews-user"></div>
+                                    <div class="clock">
+                                        <span>08.06.17р.</span>
+                                    </div>
+                                </div>
+                                <p class="reviews-name">Александра Марцонь</p>
+                                <p class="reviews-item">Спасибо Вам за качество</p>
+                                <p class="reviews-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                            </div>
+                            <div class="reviews-sl">
+                                <div class="reviews-icon-block">
+                                    <div class="like">
+                                        <span>350</span>
+                                    </div>
+                                    <div class="dislike">
+                                        <span>15</span>
+                                    </div>
+                                    <div class="reviews-user"></div>
+                                    <div class="clock">
+                                        <span>08.06.17р.</span>
+                                    </div>
+                                </div>
+                                <p class="reviews-name">Валерий Жидковь</p>
+                                <p class="reviews-item">Очень быстро, мне все понравилось!</p>
+                                <p class="reviews-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                            </div>
+                            <div class="reviews-sl">
+                                <div class="reviews-icon-block">
+                                    <div class="like">
+                                        <span>350</span>
+                                    </div>
+                                    <div class="dislike">
+                                        <span>15</span>
+                                    </div>
+                                    <div class="reviews-user clearfix"></div>
+                                    <div class="clock">
+                                        <span>08.06.17р.</span>
+                                    </div>
+                                </div>
+                                <p class="reviews-name">Александра Марцонь</p>
+                                <p class="reviews-item">Спасибо Вам за качество</p>
+                                <p class="reviews-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="reviews-btn">
+                            <a href="#" data-toggle="modal" data-target="#popap-3">оставить отзыв</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coffee">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Доставка воды для кофе</h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <h3>Какая же вода наиболее подходит для приготовления кофе в кофемашине?</h3>
+                        <p>Производители кофемашин рекомендуют использовать специально подготовленную воду с <span>пониженным содержанием микроэлементов.</span></p>
+                        <p>Это необходимо для того, чтобы кофемашина работала исправно и на фильтре не накапливалось большое количество осадка.</p>
+                    </div>
+                    <div class="coffee-par">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                            <img src="images/coffee-icon-1.png" class="img-responsive swing" alt="">
+                            <p>Сохраните вкус Вашего любимого кофе</p>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                            <img src="images/coffee-icon-2.png" class="img-responsive swing" alt="">
+                            <p>продлите срок работы  вашей кофемашины</p>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                            <img src="images/coffee-icon-3.png" class="img-responsive swing" alt="">
+                            <p>вода обогащенная кислородом</p>
+                        </div>
+                        <div class="col-md-offset-0 col-lg-offset-3">
+                            <div class="coffee-bg-right">
+                                <img src="images/coffee-cup.png" alt="">
+                                <img src="images/coffee-parall-1.png" alt="">
+                                <img src="images/coffee-parall-2.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Контакты</h2>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-3 navigation">
+                        <div class="navigation-tel">
+                            <img src="images/cont-tel.png" class="img-responsive" alt="">
+                            <p><a href="tel:0675101357">(067) 510 13 57</a></p>
+                            <p><a href="tel:0979044241">(097) 904 42 41</a></p>
+                        </div>
+                        <div class="navigation-loc">
+                            <img src="images/cont-loc.png" class="img-responsive" alt="">
+                            <p>г. Славута ул. Козацька 26</p>
+                        </div>
+                        <div class="navigation-btn">
+                            <a href="#" data-toggle="modal" data-target="#popap-1">заказать звонок</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-5">
+                       <div class="footer-form">
+                           <h4>Оставить заявку на доставку</h4>
+                           <form method="post" name="popup" onsubmit="return false" id="callphone-3">
+                               <div class="modal-form name">
+                                   <label class="validate">
+                                       <input class="form-control" type="text" name="name" placeholder="Ваше Имя">
+                                   </label>
+                               </div>
+                               <div class="modal-form name">
+                                   <label class="validate">
+                                       <input class="form-control" type="text" name="name" placeholder="Ваша Фамилия">
+                                   </label>
+                               </div>
+                               <div class="modal-form phone">
+                                   <label class="validate">
+                                       <input class="form-control" type="tel" name="Ваш Телефон"
+                                              placeholder="Телефон"/>
+                                   </label>
+                               </div>
+                               <div class="">
+                                   <span>*обязательное поле для заполнения</span>
+                               </div>
+                               <div class="modal-form mail">
+                                   <label class="validate">
+                                       <input class="form-control" type="email" name="Ваш E-mail"
+                                              placeholder="E-mail"/>
+                                   </label>
+                               </div>
+                               <div class="modal-form">
+                                   <textarea name="coments" placeholder="Комментарий"></textarea>
+                               </div>
+                               <div class="form-btn">
+                                   <input type="submit" class="call-order" value="Отправить" data-rel='callphone'>
+                               </div>
+                           </form>
+                       </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-7">
+                        <div class="footer-time">
+                            <p class="item-1">Закажи кулер в аренду</p>
+                            <p class="item-2">прямо сейчас</p>
+                            <p class="item-3">и получи</p>
+                            <p class="item-4">2 бутЫля воды</p>
+                            <p class="item-5">в подарок</p>
+                            <div class="clock-time">
+                                <span class="timer">10</span>
+                            </div>
+                            <a href="#">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+               <div class="row">
+                   <div class="col-xs-12">
+                       <p>Питна вода 2017 - Copiright</p>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="over">
+        <div class="footer-par">
+            <div class="foot-par-l">
+                <img src="images/foot-par-l.jpg" alt="">
+            </div>
+            <div class="foot-par-r">
+                <img src="images/foot-par-r.png" alt="">
+            </div>
+            <div class="foot-par-m">
+                <img src="images/foot-par-m.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/mask.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
